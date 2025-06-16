@@ -2,6 +2,8 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import "./SearchBox.css"
 import { useState } from 'react';
+import SearchIcon from '@mui/icons-material/Search';
+
 export default function SearchBox({updateData}){
     let [city, setCity] = useState("");
     let [error, setError] = useState(false);
@@ -51,11 +53,10 @@ export default function SearchBox({updateData}){
     };
     return(
          <div className='SearchBox'>
-            <h3>Search Weather </h3>
             <form onSubmit={handleSubmit}>
             <TextField id="city" label="Search city" variant="outlined" required value={city} onChange={handleChange}/> <br /><br />
-            <Button variant="contained" type='submit'>
-        SEARCH
+            <Button variant="contained" type='submit' endIcon={<SearchIcon/>}>
+        Search
       </Button>
       {error? <p style={{color:"red"}}>No Such Place exists!</p>:""}
             </form> 

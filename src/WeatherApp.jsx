@@ -18,7 +18,14 @@ export default function WeatherApp(){
     };
     return(
       <div  style={{textAlign: "center"}}>
-        <h1>Weather Nest</h1>
+       <h1
+  style={{
+    color: "#4a90e2"
+  }}
+>
+  Weather Nest
+</h1>
+
         <SearchBox updateData={updateData}/>
         <DataBox info={weatherInfo}/>
       </div>
