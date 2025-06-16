@@ -18,7 +18,7 @@ export default function DataBox({info}){
    <hr style={{ borderTop: "1px solid lightgrey" }} />
      <br /><br />
           <div  className="cardContainer">
-            <Card sx={{ minWidth: 350 }}>
+            <Card className='card'>
       <CardMedia
         sx={{ height: 160 }}
         image={info.humidity>80?RAIN_URL:info.temp>25?HOT_URL:COLD_URL}

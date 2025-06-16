@@ -2,10 +2,11 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  
+  background: linear-gradient(to top, lightblue, #fff);
+
   color-scheme: light dark;
   color: rgba(3, 148, 244, 0.87);
-  background: linear-gradient(to right, lightblue 10%, white 40%,white, grey 100%);
+ 
 
 
 
@@ -40,11 +41,42 @@ h1 {
   line-height: 1.1;
 }
 #root{
-  min-width: 650px;
+  min-width: 40.625rem;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.05));
   border: 1px solid #aaa; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 1000px) {
+ #root{
+  min-width: 35.625rem; /* 650px */
+ }
+}
+@media (max-width: 861px) {
+  #root{
+   min-width: 30.625rem; /* 650px */
+  }
+ }
+ @media (max-width: 670px) {
+  #root{
+   min-width: 25.625rem; /* 650px */
+  }
+ }
+ @media (max-width: 580px) {
+  #root{
+   min-width: 20.625rem; /* 650px */
+  }
+ }
+ @media (max-width: 484px) {
+  #root{
+   min-width: 17.625rem; /* 650px */
+  }
+ }
+ @media (max-width: 450px) {
+  #root{
+   min-width: 10.625rem; /* 650px */
+  }
+ }
+ 
 button {
   border-radius: 8px;
   border: 1px solid transparent;

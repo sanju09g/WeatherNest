@@ -1,9 +1,21 @@
 .DataBox{
-    text-align: center;
+    text-align: center; 
 
 }
 .cardContainer{
     display: flex;
     justify-content: center;
+
   
 }
+.card{
+    min-width: 400px;
+    max-height: 400px;
+  
+}
+@media (max-width: 464px) {
+    .card{
+     min-width: 200px; /* 650px */
+    }
+   }
+   

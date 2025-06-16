@@ -1,11 +1,17 @@
 #root {
-  max-width: 1280px;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 
 }
-
+@media (max-width: 790px) {
+  #root {
+    max-width: 50rem;
+   
+  
+  }
+}
 .logo {
   height: 6em;
   padding: 1.5em;
